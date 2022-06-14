@@ -1,8 +1,7 @@
 # Saveliev Ihor
 I am a Web-developer, I create "turnkey" websites.
 
-![alt text](https://raw.githubusercontent.com/cloudy1gor/cloudy1gor.github.io
-/main/photo.png)
+![Screenshot](screenshot.png)
 
 ## Portfolio
 ### https://cloudy1gor.github.io./
