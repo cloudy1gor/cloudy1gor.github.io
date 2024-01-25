@@ -46,15 +46,15 @@ const langArr = {
   },
 
   topTitle: {
-    ru: "Я - Web-разработчик, создаю сайты \"под ключ\".",
-    ua: "Я - Web-розробник, створюю сайти \"під ключ\".",
-    en: "I'm a Web-developer, I create sites \"turnkey\".",
+    ru: "Я - Web-разработчик, занимаюсь созданием и поддержкой сайтов.",
+    ua: "Я - Web-розробник, займаюся створенням та підтримкою сайтів.",
+    en: "I'm a Web developer, creating and maintaining websites.",
   },
 
   txt1: {
     ru: "🚀 Адаптивная вёрстка по макетам в PSD, Sketch, Figma, Adobe XD, Zeplin.",
     ua: "🚀 Створення адаптивних сайтів за макетами в PSD, Sketch, Figma, Adobe XD, Zeplin.",
-    en: "🚀 Адаптивна верстка за макетами в PSD, Sketch, Figma, Adobe XD, Zeplin.",
+    en: "🚀 Responsive layout for mockups in PSD, Sketch, Figma, Adobe XD, Zeplin.",
   },
 
   txt2: {
