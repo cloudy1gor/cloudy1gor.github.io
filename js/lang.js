@@ -1,137 +1,140 @@
 const langArr = {
   cv: {
-    ru: "Моё CV",
     ua: "Моє CV",
     en: "My CV",
   },
 
   content: {
-    ru: "Мои работы",
     ua: "Мої роботи",
     en: "Portfollio",
   },
 
   about: {
-    ru: "Обо мне",
     ua: "Про мене",
     en: "About me",
   },
 
   name: {
-    ru: "Савельев Игорь",
-    ua: "Савельєв Ігор",
-    en: "Saveliev Ihor",
+    ua: "Ігор",
+    en: "Ihor",
   },
-  
+
   contacts: {
-    ru: "Контакты",
     ua: "Контакти",
     en: "Contacts",
   },
 
-  service: {
-    ru: "Предоставляемые услуги:",
-    ua: "Послуги, що надаються:",
-    en: "Services provided:",
-  },
-  project: {
-    ru: "Особенности готового проекта:",
-    ua: "Особливості проекту:",
-    en: "Features of the finished project:",
-  },
-  support: {
-    ru: "Поддержка проекта:",
-    ua: "Підтримка проекту:",
-    en: "Project support:",
-  },
-
   topTitle: {
-    ru: "Я - Web-разработчик, занимаюсь созданием и поддержкой сайтов.",
-    ua: "Я - Web-розробник, займаюся створенням та підтримкою сайтів.",
-    en: "I'm a Web developer, creating and maintaining websites.",
+    ua: "Web-розробник з фокусом на Laravel та Vue.",
+    en: "Web Developer focused on Laravel and Vue.",
   },
 
-  txt1: {
-    ru: "🚀 Адаптивная вёрстка по макетам в PSD, Sketch, Figma, Adobe XD, Zeplin.",
-    ua: "🚀 Створення адаптивних сайтів за макетами в PSD, Sketch, Figma, Adobe XD, Zeplin.",
-    en: "🚀 Responsive layout for mockups in PSD, Sketch, Figma, Adobe XD, Zeplin.",
+  service: {
+    ua: "Ключові компетенції:",
+    en: "Core competencies:",
   },
 
-  txt2: {
-    ru: "📱 Установка CMS Wordpress/October.",
-    ua: "📱 Встановлення CMS Wordpress/October.",
-    en: "📱 Installing the CMS Wordpress/October.",
+  backendTitle: {
+    ua: "Backend",
+    en: "Backend",
   },
 
-  txt3: {
-    ru: "✏️ Внесение правок, исправление проблем, как в вёрстке сайта, так и в Javascript модулях(слайдер, анимации, попап, форма обратной связи).",
-    ua: "✏️ Внесення правок, виправлення проблем, як у верстці сайту, так і в Javascript модулях (слайдер, анімації, попап, форма зворотнього зв'язку).",
-    en: "✏️ Making changes, fixing problems, as in the site layout and in Javascript modules (slider, animation, popup, feedback form).",
+  backendList: {
+    ua: `
+  <li>PHP (OOP, SOLID, шаблони проєктування)</li>
+  <li>Laravel: API, middleware, queue, кастомні пакети</li>
+  <li>MySQL/PostgreSQL/NoSQL: складні запити, оптимізація</li>
+  <li>Redis: кеш, сесії, черги</li>
+  <li>Postman: тестування REST API, перевірка авторизації, автоматизація запитів</li>
+  <li>GitHub: контроль версій, робота з pull requests та branching</li>
+  <li>Захист: XSS, CSRF, SQL Injection</li>
+  <li>Робота з API та webhook</li>
+  <li>Docker: середовище розробки та продакшн</li>
+  <li>Linux та Bash: налаштування середовища, автоматизація задач скриптами</li>
+  <li>CI/CD: Github Actions, Deployer</li>
+  <li>Тестування: PHPUnit</li>
+  <li>WordPress: розробка тем, кастомних плагінів</li>
+    `.trim(),
+    
+    en: `
+  <li>PHP (OOP, SOLID, design patterns)</li>
+  <li>Laravel: API, middleware, queues, custom packages</li>
+  <li>MySQL/PostgreSQL/NoSQL: complex queries, optimization</li>
+  <li>Redis: cache, sessions, queues</li>
+  <li>Postman: testing REST APIs, auth verification, request automation</li>
+  <li>GitHub: version control, working with pull requests and branching</li>
+  <li>Security: XSS, CSRF, SQL Injection protection</li>
+  <li>Working with APIs and webhooks</li>
+  <li>Docker: dev & production environments</li>
+  <li>Linux and Bash: environment setup, task automation with scripts</li>
+  <li>CI/CD: Github Actions, Deployer</li>
+  <li>Testing: PHPUnit</li>
+  <li>WordPress: theme development, custom plugins</li>
+  `.trim(),
   },
 
-  txt4: {
-    ru: "🧩 Работа с СУБД (SQL, MySql).",
-    ua: "🧩 Робота з СУБД (SQL, MySql).",
-    en: "🧩 Work with DBMS (SQL, MySql).",
+  frontendTitle: {
+    ua: "Frontend",
+    en: "Frontend",
   },
 
-  txt5: {
-    ru: "💻 Оптимизированый код на чистом JavaScript и PHP, работаю с библиотеками jQuery.",
-    ua: "💻 Оптимізований код на чистому JavaScript і PHP, працюю з бібліотеками jQuery.",
-    en: "💻 Optimized code in pure JavaScript and PHP, working with libraries jQuery.",
+  frontendList: {
+    ua: `
+  <li>JavaScript (ES6+), модульність, async/await</li>
+  <li>Vue: API композиції, Vue Маршрутизатор, Pinia / Provide-Inject</li>
+  <li>HTML5, SCSS, адаптивна верстка, BEM</li>
+  <li>Vite/Webpack/Gulp: конфігурація, збірка</li>
+  <li>Axios/Fetch: запити, обробка помилок</li>
+  <li>Tailwind/Bootstrap: швидка верстка</li>
+  <li>Анімації: Framer Motion, Transition Group</li>
+  <li>Оптимізація: Lighthouse, lazy loading</li>
+  <li>Кросбраузерність та тестування</li>
+  <li>Інтеграція сторонніх бібліотек (Swiper, Chart.js, AOS)</li>
+  <li>Робота з Figma</li>
+    `.trim(),
+
+    en: `
+  <li>JavaScript (ES6+), modularity, async/await</li>
+  <li>Vue: Composition API, Vue Router, Pinia/Provide-Inject</li>
+  <li>HTML5, SCSS, responsive layout, BEM</li>
+  <li>Vite/Webpack/Gulp: config and build</li>
+  <li>Axios/Fetch: API requests, error handling</li>
+  <li>Tailwind/Bootstrap: rapid layout</li>
+  <li>Animations: Framer Motion, Transition Group</li>
+  <li>Optimization: Lighthouse, lazy loading</li>
+  <li>Cross-browser support and testing</li>
+  <li>Integration of 3rd-party libraries (Swiper, Chart.js, AOS)</li>
+  <li>Working with Figma</li>
+    `.trim(),
   },
 
-  txt6: {
-    ru: "📐 Использование препроцессоров ( SCSS,LESS,PUG ).",
-    ua: "📐 Використання препроцесорів ( SCSS,LESS,PUG ).",
-    en: "📐 Using preprocessors ( SCSS,LESS,PUG ).",
+  support: {
+    ua: "Підтримка проєктів та масштабування!",
+    en: "Project support and scaling!",
   },
 
-  txt7: {
-    ru: "🎲 Кросбраузерная адаптивная семантическая верстка HTML 5 независимыми блоками по методологии БЕМ.",
-    ua: "🎲 Кросбраузерна адаптивна адаптивна семантична верстка HTML 5 незалежними блоками за методологією БЕМ.",
-    en: "🎲 Cross-browser adaptive semantic HTML 5 layout independent blocks according to BEM methodology.",
+  achievementsTitle: {
+    ua: "Achievements",
+    en: "Achievements",
   },
 
-  txt8: {
-    ru: "🕐 Оптимизация для хороших результатов в тесте GooglePageSpeed.",
-    ua: "🕐 Оптимізація для хороших результатів у тесті GooglePageSpeed.",
-    en: "🕐 Optimization for good results in the GooglePageSpeed test.",
-  },
+  achievementsList: {
+    ua: `
+  <li>Налаштував простий CI/CD-процес через GitHub Actions для автоматичного деплою на хостинг.</li>
+  <li>Розробив кастомну адмін-панель для невеликого онлайн-магазину (~500 товарів) на Laravel + Vue.</li>
+  <li>Покращив оцінку Google PageSpeed з 60 до 88+ за рахунок lazy loading та оптимізації зображень.</li>
+  <li>Інтегрував CRM та оплату через Stripe для сайту послуг — зекономив клієнту час на обробку замовлень.</li>
+  <li>Реалізував кешування з Redis для зменшення навантаження на БД у періоди пікової активності.</li>
+  <li>Поступово замінив jQuery-функціонал на React компоненти у старому проєкті для покращення підтримки.</li>
+    `.trim(),
 
-  txt9: {
-    ru: "💡 Использую сборщики проэктов Gulp/WebPack.",
-    ua: "💡 Використовую збирачі проєктів Gulp/WebPack.",
-    en: "💡 I use the Gulp/WebPack project builders.",
-  },
-
-  txt10: {
-    ru: "🔧 Подключение и настройка JavaScript компонентов (AOSP, GSOCK, Swiper, Slick).",
-    ua: "🔧 Підключення та налаштування JavaScript компонентів (AOSP, GSOCK, Swiper, Slick).",
-    en: "🔧 Connecting and configuring JavaScript components (AOSP, GSOCK, Swiper, Slick).",
-  },
-
-  txt11: {
-    ru: "📄 Реализация pixel perfect.",
-    ua: "📄 Реалізація pixel perfect.",
-    en: "📄 Implementation of pixel perfect.",
-  },
-
-  txt12: {
-    ru: "📎 Правки как в вёрстке так и в CMS.",
-    ua: "📎 Правки як у верстці сайту так і в CMS.",
-    en: "📎 Edits both in the layout and in the CMS.",
-  },
-
-  txt13: {
-    ru: "💬 Консультации и реализация дополнительных задач.",
-    ua: "💬 Консультації та реалізація додаткових завдач.",
-    en: "💬 Consultations and implementation of additional tasks.",
-  },
-
-  txt14: {
-    ru: "На связи 24/7! Буду рад поработать именно с Вами, обращайтесь!",
-    ua: "На зв'язку 24/7! Буду радий попрацювати саме з Вами, звертайтеся!",
-    en: "In touch 24/7! I will be glad to work with you, contact me!",
-  },
+    en: `
+  <li>Set up a basic CI/CD pipeline via GitHub Actions for automated hosting deployment.</li>
+  <li>Built a custom admin panel for a small online store (~500 products) using Laravel + Vue.</li>
+  <li>Improved Google PageSpeed score from 60 to 88+ by adding lazy loading and image optimization.</li>
+  <li>Integrated CRM and Stripe payments for a service-based site — reduced manual order processing time.</li>
+  <li>Implemented Redis caching to ease DB load during peak activity periods.</li>
+  <li>Gradually replaced jQuery-based code with React components to modernize a legacy project.</li>
+    `.trim(),
+  }
 };
